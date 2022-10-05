@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Timed Code Quiz</title>
+        <link rel="stylesheet" href="assets/CSS/reset.css">
+        <link rel="stylesheet" href="assets/CSS/style.css">
+    </head>
+
+<body>
+
+<!-- high scores and timer -->
+
+    <header>
+        <a href="#"></a><span>View High Schores</span></a>
+        <h3 id="timer"> Time Left: 60</h3>
+    </header>
+
+<!-- title, intro text, start button -->
+
+<div id="introduction">
+    <h1> Coding Skills Quiz</h1>
+    <p>Answer the following code-related questions within the time limit.<br/>
+       Incorrect answers will penalize your score/time by 15 seconds!
+    </p>
+    <button id="start-button" class="button">Start Quiz</button>
+</div>
+
+<!-- div to hold questions -->
+
+<div id="wrapper">
+    <div id="questions" class="hidden">
+        <div id="question"></div>
+
+        <div id="choices" class="btn-grid">
+
+        </div>
+        <div id="final-score"></div>
+    </div>
+
+<!-- div to enter initials after quiz completes -->
+
+    <div id="score-entry" class="hidden">
+        <h3> All done! </h3>
+        <p>Your final score is <span id="score"></span></p>
+        <label>Enter initials: </label>
+        <input type="initials" name="initials" id="initials" placeholder="" />
+        <button id="submit" class="btn">Submit</button>
+    </div>
+
+<!-- div for high scores after quiz -->
+
+    <div id="scores" class="hidden">
+        <h3> Highscores </h3>
+        <span id="empty-score" class= "hide">No scores saved</span>
+        <ol id="score-list">
+
+        </ol>
+        <button id="back-button" class="btn">Go Back</button>
+        <button id="clear-button" class="btn">Clear Highscores</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
+
+
+
+
+
+
+<!-- question -->
+
+<!-- answers -->
+
+<!-- right or wrong -->
+
+<!-- All done  -->
+
+<!-- Final score -->
+
+<!-- Add initials -->
+
