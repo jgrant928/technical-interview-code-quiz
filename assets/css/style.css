@@ -56,14 +56,15 @@ a {
   display: flex;
   flex-direction: column;
 justify-content: center;
-  gap: 5px;
+  gap: 10px;
   max-width: 150px;
   width: 80%;
   margin: 10px 0;
+  padding: 10px;
 }
 
 .choices {
-  background-color: indigo;
+  background-color: green;
   color: white;
   font-size: 14px;
   border-radius: 8px;
