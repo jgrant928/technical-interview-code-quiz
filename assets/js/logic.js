@@ -124,7 +124,7 @@ function questionClick(event) {
             feedbackEl.setAttribute('class', 'feedback hide');
         }, 1000);
         timerEl.textContent = time;
-    } else { (buttonEl.value === questions[currentQuestionIndex].answer)  
+    } else {
         sfxRight.play();
         feedbackEl.textContent = 'Right!';
         feedbackEl.setAttribute('class', 'feedback');
