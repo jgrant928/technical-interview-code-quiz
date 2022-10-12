@@ -7,7 +7,7 @@ A timed coding quiz with multiple-choice questions. The app runs in the browser 
 
 
 Screenshot:
-![Quiz Screenshot](https://user-images.githubusercontent.com/112264295/189549946-021fa390-31f6-4db1-8c73-39d9c4b69a87.png)
+![Quiz Screenshot](https://user-images.githubusercontent.com/112264295/195231733-16b3eb10-25f8-4ab0-b1ef-72caabb8a68b.png)
 
 ## Usage
 
