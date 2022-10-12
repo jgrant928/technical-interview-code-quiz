@@ -12,7 +12,7 @@ Screenshot:
 ## Usage
 
 Repository available at: https://github.com/jgrant928/technical-interview-code-quiz
-View the refactored webpage at: https://jgrant928.github.io/technical-interview-code-quiz
+View the webpage at: https://jgrant928.github.io/technical-interview-code-quiz
 
 ## Credits
 
