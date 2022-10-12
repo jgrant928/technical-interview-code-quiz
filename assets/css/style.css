@@ -2,18 +2,24 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+    background-color: #f2f2f2;
+}
 /* timer style */
-
-/* timer on level with scores */
 .timer {
   float: right;
-  padding-right: 20px;
-  font-size: 15px;
+  font-size: 20px;
   font-weight: lighter;
+  padding: 10px 20px;
 }
 
 .scores {
-    display: inline-block;
+  /* make into button */
+  border: none;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 20px;
+
 }
 
 
@@ -23,10 +29,35 @@ header {
   justify-content: space-between;
 
 }
+
+h1 {
+  font-size: 30px;
+  font-weight: bold;
+  padding: 10px 20px;
+}
   
 a {
     text-decoration: none;
     padding: 20px;
+}
+
+p {
+  font-size: 20px;
+  font-weight: lighter;
+  padding: 10px 20px;
+}
+
+#start {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 20px;
 }
 
 
@@ -61,17 +92,27 @@ justify-content: center;
   width: 80%;
   margin: 10px 0;
   padding: 10px;
-}
-
-.choices {
-  background-color: green;
-  color: white;
-  font-size: 14px;
-  border-radius: 8px;
-  padding: 5px 5px;
   text-align: center;
 }
 
+.choices {
+  /* center */
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 14px;
+  border-radius: 200px;
+  padding: 20x 20px;
+  text-align: center;
+}
+
+#feedback {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+  padding: 10px;
+  text-align: center;
+}
 
 .hide {
   display: none;
@@ -80,4 +121,11 @@ justify-content: center;
 h4 {
   font-style: italic;
   color: dimgray;
+}
+
+#end-screen {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 10px 20px;
 }

@@ -112,27 +112,25 @@ function questionClick(event) {
 
     // create if else function to check if user guessed right or wrong
     //conditional statement that checks if the clicked choice button's value is not the same as the questions[currentQuestionIndex]'s answer
-    if (!buttonEl.value === questions[currentQuestionIndex].answer) { 
+    if (buttonEl.value !== questions[currentQuestionIndex].answer) { 
         //incorrect answer scenario
         // play "wrong" sound effect
-        time -= 15;
-        sfxWrong.play();
+        time -= 5;
+        if (time < 0) {
+            time = 0;
+        }
+        timerEl.textContent = time;
         // wrong feedback on page for half a second
         feedbackEl.textContent = 'Wrong!';
-        feedbackEl.setAttribute('class', 'feedback');
-        setTimeout(function() {
-            feedbackEl.setAttribute('class', 'feedback hide');
-        }, 1000);
-        timerEl.textContent = time;
     } else {
-        sfxRight.play();
         feedbackEl.textContent = 'Right!';
-        feedbackEl.setAttribute('class', 'feedback');
-        setTimeout(function() {
-            feedbackEl.setAttribute('class', 'feedback hide');
-        }, 1000);
-        currentQuestionIndex++;
-    }   
+     
+    feedbackEl.setAttribute('class', 'feedback');    
+    setTimeout(function() {
+        feedbackEl.setAttribute('class', 'feedback hide');
+    }, 1000);
+
+    currentQuestionIndex++;
         // move to next question
     
     // check if we've run out of questions
@@ -143,6 +141,8 @@ function questionClick(event) {
 
     }
 }
+}
+
 
 function quizEnd() {
     // stop timer
